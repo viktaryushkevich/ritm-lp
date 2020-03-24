@@ -35,7 +35,7 @@ Colors:
 - Darkest, navbar, first background: #1a1b20
 - Darker, second background: #24252c
 - Dark, nav-pills: #52555f
-- Green, regular buttons: #00bb5c
+- Green, regular buttons: #713671
 - Dark green, buttons on green: #00763a
 - Text: #fff
 ******************************************/
@@ -47,10 +47,11 @@ Colors:
 body {
 	color: #fff;
 	font: 300 16px/1.6em "Ubuntu", sans-serif;
+	overflow-x: hidden;
 }
 
 h1 {
-	font: 500 38px/1.1em "Ubuntu", sans-serif;
+	font: 500 38px/1em "Ubuntu", sans-serif;
 }
 
 h2 {
@@ -74,12 +75,17 @@ p {
 }
 
 p.seventy-percent-width {
+	width: 70%;
+	text-align: left;
+}
+
+p.seventy-percent-width-dflt {
 	width: 100%;
-	text-align: center;
+	text-align: left;
 }
 
 a {
-	color: #00bb5c;
+	color: #926188;
 	text-decoration: none;
 }
 
@@ -101,9 +107,9 @@ img.decorative-line {
 	height: 42px;
 	padding-right: 34px;
 	padding-left: 34px;
-	border: 1px solid #00bb5c;
+	border: 1px solid #713671;
 	border-radius: 50px;
-	background-color: #00bb5c;
+	background-color: #713671;
 	color: #fff;
 	font: 500 15px/40px "Ubuntu", sans-serif;
 	transition: border .3s ease, background-color .3s ease, color .3s ease;
@@ -114,9 +120,9 @@ img.decorative-line {
 	margin-top: 20px;
 	padding-right: 38px;
 	padding-left: 38px;
-	border: 1px solid #00bb5c;
-	border-radius: 50px;
-	background-color: #00bb5c;
+	border: 1px solid #713671;
+	border-radius: 5px;
+	background-color: #713671;
 	font: 500 18px/51px "Ubuntu", sans-serif;
 }
 
@@ -173,9 +179,9 @@ img.decorative-line {
 	display: block;
 	width: 100%;
 	height: 40px;
-	border: 1px solid #00bb5c;
+	border: 1px solid #713671;
 	border-radius: 4px;
-	background-color: #00bb5c;
+	background-color: #713671;
 	color: #fff;
 	font: 500 16px/36px "Ubuntu", sans-serif;
 	transition: background-color .3s ease, color .3s ease;
@@ -507,8 +513,9 @@ img.decorative-line {
 }
 
 .navbar .navbar-brand img {
-	width: 100px;
-	height: 26px;
+	width: 130px;
+	margin-top: -10px;
+	/* height: 26px; */
 }
 
 /* Menu links */
@@ -597,7 +604,7 @@ img.decorative-line {
 	position: relative;
 	width: 100%;
 	min-height: 100%;
-	background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url("http://placehold.it/1920x1080/393d48/7c7e85/") center no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url("../images/header-background.jpg") center no-repeat;
 	background-size: cover;
 }
 
@@ -613,8 +620,8 @@ img.decorative-line {
 	flex-direction: column;
 	justify-content: center;
 	min-height: 100vh; 
-	padding-top: 100px;
-	padding-bottom: 80px;
+	padding-top: 40px;
+	padding-bottom: 30px;
 	text-align: center;
 }
 
@@ -656,7 +663,7 @@ img.decorative-line {
 }
 
 .header h1 span {
-	color: #25c86a;
+	color: #926188;
 }
 
 .header p {
@@ -734,11 +741,13 @@ img.decorative-line {
 .testimonials .carousel-inner .mb-0 {
 	margin-top: 15px;
 	margin-bottom: 6px;
-	font: italic 300 18px/1.6em "Ubuntu", sans-serif;
+	font: italic 300 14px/1.6em "Ubuntu", sans-serif;
+	padding: 0 15px;
 }
 
 .testimonials .carousel-inner h5 {
 	margin-top: 0px;
+	font-size: 16px;
 }
 
 .testimonials .carousel-indicators {
@@ -790,7 +799,7 @@ img.decorative-line {
 .duration {
 	padding-top: 60px;
 	padding-bottom: 90px;
-	background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('http://placehold.it/1920x1080/393d48/7c7e85/') center no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('../images/duration-background.jpg') center no-repeat;
 	background-size: cover;
 }
 
@@ -812,8 +821,8 @@ img.decorative-line {
 	height: 50px;
 	padding-top: 10px;
 	border-radius: 50px;
-	border: 2px solid #00bb5c;
-	background-color: #00bb5c;
+	border: 2px solid #713671;
+	background-color: #713671;
 	color: #fff;
 	font: 500 24px/1.2em "Ubuntu", sans-serif;
 	text-align: center;
@@ -871,8 +880,8 @@ img.decorative-line {
 
 .details .nav-pills li.active a,
 .details .nav-pills li a:hover {
-	border: 1px solid #00bb5c;
-	background-color: #00bb5c;
+	border: 1px solid #713671;
+	background-color: #713671;
 	color: #fff;
 }
 
@@ -928,7 +937,7 @@ img.decorative-line {
 	padding-top: 2px;
 	margin-right: 10px;
 	border-radius: 50px;
-	background-color: #00bb5c;
+	background-color: #713671;
 	text-align: center;
 	transition: background-color 0.3s ease;
 }
@@ -938,7 +947,7 @@ img.decorative-line {
 }
 
 .panel-group .panel-title:hover a.collapsed .circle-numbering {
-	background-color: #00bb5c;
+	background-color: #713671;
 }
 
 .panel-group .panel-title a .panel-title-text {
@@ -1016,7 +1025,7 @@ img.decorative-line {
 .details .tab-content .tab-c span.fa {
 	float: left;
 	margin-right: 20px;
-	color: #00bb5c;
+	color: #713671;
 }
 
 .details .tab-content .tab-c h4 {
@@ -1035,9 +1044,10 @@ img.decorative-line {
 .pricing {
 	padding-top: 60px;
 	padding-bottom: 90px;
-	background: linear-gradient(rgba(0, 187, 92, 0.0), rgba(0, 187, 92, 0.0)), url('http://placehold.it/1920x1080/393d48/7c7e85/') center no-repeat;
+	padding-left: 220px;
+	background: linear-gradient(rgba(0, 187, 92, 0.0), rgba(0, 187, 92, 0.0)), url('../images/clients-background.jpg') center no-repeat;
 	background-size: cover;
-	text-align: center;
+	text-align: left;
 }
 
 .pricing .above-price {
@@ -1057,8 +1067,8 @@ img.decorative-line {
 }
 
 .pricing .button-solid {
-	border: 1px solid #00bb5c;
-	background-color: #00bb5c;
+	border: 1px solid #713671;
+	background-color: #713671;
 }
 
 .pricing .button-solid:hover {
@@ -1103,13 +1113,13 @@ img.decorative-line {
 /***********************/
 .facts-1 {
 	padding-bottom: 75px;
-	background-color: #00bb5c;
+	background-color: #713671;
 }
 
 .facts-1 .facts-1-image-pane {
 	height: 350px;
 	margin: auto;
-	background: url('http://placehold.it/1920x1080/858ca1/fff/') center no-repeat;
+	background: url('../images/course-left.jpg') center no-repeat;
 	background-size: cover;
 }
 
@@ -1134,7 +1144,7 @@ img.decorative-line {
 /***********************/
 .facts-2 {
 	padding-bottom: 75px;
-	background-color: #00bb5c;
+	background-color: #713671;
 }
 
 .facts-2 hr.under-heading {
@@ -1155,7 +1165,7 @@ img.decorative-line {
 .facts-2 .facts-2-image-pane {
 	height: 350px;
 	margin: auto;
-	background: linear-gradient(rgba(255, 99, 30, 0.0), rgba(255, 99, 30, 0.0)), url('http://placehold.it/1920x1080/858ca1/fff/') center no-repeat;
+	background: linear-gradient(rgba(255, 99, 30, 0.0), rgba(255, 99, 30, 0.0)), url('../images/course-right.jpg') left center no-repeat;
 	background-size: cover;
 }
 
@@ -1166,7 +1176,8 @@ img.decorative-line {
 .instructors {
 	padding-top: 60px;
 	padding-bottom: 45px;
-	background-color: #1a1b20;
+	/* background-color: #1a1b20; */
+	background-color: rgb(36, 37, 44);
 }
 
 .instructors .decorative-line {
@@ -1180,9 +1191,18 @@ img.decorative-line {
 	margin-bottom: 45px;
 }
 
-.instructor-image {
+/* .instructor-image {
 	position: relative;
 	max-width: 310px;
+} */
+
+.instructor-info {
+	font-size: 14px;
+}
+
+.instructor-image-new {
+	display: flex;
+    justify-content: center;
 }
 
 .hover-overlay {
@@ -1222,7 +1242,7 @@ img.decorative-line {
 
 .instructor-pane h5 {
 	margin-top: 18px;
-	margin-bottom: 0px;
+	margin-bottom: 18px;
 }
 
 .instructor-pane p {
@@ -1246,7 +1266,7 @@ img.decorative-line {
 
 .instructor-pane .fa-stack a:hover .fa-stack-1x,
 .instructor-pane .fa-stack a .fa-stack-2x {
-    color: #00bb5c;
+    color: #713671;
 }
 
 /* Magnific Popup Instructor Details Content */
@@ -1425,8 +1445,8 @@ img.decorative-line {
 }
 
 .endorsement .button-solid {
-	border: 1px solid #00bb5c;
-	background-color: #00bb5c;
+	border: 1px solid #713671;
+	background-color: #713671;
 }
 
 .endorsement .button-solid:hover {
@@ -1490,7 +1510,7 @@ img.decorative-line {
 
 .footer .social-icons-container .fa-stack a:hover .fa-stack-1x,
 .footer .social-icons-container .fa-stack a .fa-stack-2x {
-    color: #00bb5c;
+    color: #713671;
 }
 
 .footer form {
@@ -1555,7 +1575,7 @@ a.back-to-top {
 }
 
 a:hover.back-to-top {
-	background-color: #00bb5c; 
+	background-color: #713671; 
 }
 
 
@@ -1566,7 +1586,7 @@ a:hover.back-to-top {
 /* Min-width width 768px */
 @media (min-width: 768px) {
 	h1 {
-		font: 500 78px/1em "Ubuntu", sans-serif;
+		font: 500 56px/1em "Ubuntu", sans-serif;
 	}
 
 	h2 {
@@ -1574,7 +1594,7 @@ a:hover.back-to-top {
 	}
 
 	h3 {
-		font: 500 32px/1.2em "Ubuntu", sans-serif;
+		font: 500 28px/1.2em "Ubuntu", sans-serif;
 	}
 	
 	.navbar .navbar-brand {
@@ -1680,8 +1700,7 @@ a:hover.back-to-top {
 	}
 	
 	.instructor-image img {
-		width: 310px;
-		height: 302px;
+		width: 130px;
 	}
 	
 	.frequent-questions {
@@ -1727,7 +1746,7 @@ a:hover.back-to-top {
 /* Min-width width 992px */
 @media (min-width: 992px) {
 	p.seventy-percent-width {
-		width: 70%;
+		/* width: 70%; */
 		margin-right: auto;
 		margin-left: auto;
 	}
@@ -1803,8 +1822,8 @@ a:hover.back-to-top {
 	/* end of navbar in mobile mode on medium displays */
 	
 	.header .header-content {
-		padding-top: 120px;
-		padding-bottom: 60px;
+		padding-top: 80px;
+		padding-bottom: 50px;
 		text-align: left;
 	}
 
@@ -1919,7 +1938,7 @@ a:hover.back-to-top {
 	.facts-2 .zmdi-hc-ul li .zmdi	{
 		left: -1.8em;
 		margin-top: -12px;
-		font-size: 54px;
+		font-size: 30px;
 	}
 	
 	.instructor-details-container h3 {
@@ -1970,8 +1989,8 @@ a:hover.back-to-top {
 	.header .header-content {
 		min-height: auto;
 		height: 800px; 
-		padding-top: 110px;
-		padding-bottom: 70px;
+		padding-top: 80px;
+		padding-bottom: 50px;
 	}
 
 	.header .presenter-img {
@@ -2017,13 +2036,13 @@ a:hover.back-to-top {
 	.facts-1 .facts-1-text-pane-container {
 		width: 500px;
 		margin-left: 65px;
-		padding-top: 73px;
+		padding-top: 5px;
 	}
 	
 	.facts-2 .facts-2-text-pane-container {
 		width: 500px;
 		margin-right: 70px;
-		padding-top: 73px;
+		padding-top: 5px;
 	}
 
 	.statistics p {
@@ -2043,4 +2062,42 @@ a:hover.back-to-top {
 	.footer form .form-group.second {
 		width: 174px;
 	}
+}
+
+.courses-list li {
+	list-style: none;
+}
+
+.courses-list {
+	padding-left: 0;
+}
+
+.certificate-row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 80px;
+}
+
+.certificate {
+	max-width: 302px;
+	border-radius: 5px;
+}
+
+.certificate-group {
+	max-width: 538px;
+	border-radius: 5px;
+}
+
+.for-whom {
+	padding-left: 20px;
+}
+
+.clients-img {
+	max-width: 138px;
+	padding-right: 25px;
+}
+
+.clients-image {
+	text-align: right;
 }
